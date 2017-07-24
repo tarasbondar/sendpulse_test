@@ -6,6 +6,7 @@
     <title>Sendpulse test</title>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet">
     <?php
         include('php/db.php');
         session_start();
@@ -40,7 +41,9 @@
         <input type="text" id="taskTitle" class="form-control" placeholder="Title" <?php echo ($task ? 'value="'.$task['title'].'"': '');?> required>
 
         <label for="taskDate" class="sr-only">Date</label>
+        <div class="col-lg-12 no-side-padding">
         <input type="text" id="taskDate" class="form-control" value = '<?php echo ($task ? $task['assigned_time'] : date('Y-m-d H:i:s')); ?>' required>
+        </div>
 
         <label for="taskDescr" class="sr-only">Description</label>
         <textarea id="taskDescr" class="form-control" placeholder="Description" rows=5 required><?php echo ($task ? $task['descr']: '');?></textarea>
@@ -55,6 +58,19 @@
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/main.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/moment.js"></script>
+<script src="bootstrap/js/transition.min.js"></script>
+<script src="datepicker/js/bootstrap-datepicker.min.js"></script>
+<script src="datepicker/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#taskDate').datetimepicker({
+            format: 'YYYY-MM-DD HH:mm:ss',
+            defaultDate: new Date()
+        });
+    });
+</script>
+
 
 </body>
 </html>

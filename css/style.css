@@ -164,3 +164,7 @@ h6, .h6 {
   margin-bottom: 0;
 }
 
+.no-side-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
