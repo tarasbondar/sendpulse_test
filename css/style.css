@@ -1,6 +1,13 @@
 body {
   padding-top: 40px;
   padding-bottom: 40px;
+  background-color: #fff;
+}
+
+.header {
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #e5e5e5;
   background-color: #eee;
 }
 
@@ -99,12 +106,14 @@ h6, .h6 {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
 .blog-title {
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 0;
   font-size: 50px;
   font-weight: normal;
 }
+
 .blog-description {
   font-size: 20px;
   color: #999;
@@ -118,12 +127,14 @@ h6, .h6 {
 .sidebar-module {
   padding: 15px;
   margin: 0 -15px 15px;
+  background-color: #eee;
 }
+
 .sidebar-module-inset {
   padding: 15px;
-  background-color: #f5f5f5;
   border-radius: 4px;
 }
+
 .sidebar-module-inset p:last-child,
 .sidebar-module-inset ul:last-child,
 .sidebar-module-inset ol:last-child {
@@ -167,4 +178,9 @@ h6, .h6 {
 .no-side-padding {
   padding-left: 0;
   padding-right: 0;
+}
+
+.text-muted {
+  margin-bottom: 5px;
+  margin-top: 5px;
 }

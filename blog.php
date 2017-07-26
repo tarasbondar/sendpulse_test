@@ -63,9 +63,12 @@ if (!($_SESSION && $_SESSION['user_id'] > 0)) {
         </div><!-- /.blog-main -->
 
         <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-             <div class="sidebar-module sidebar-module-inset">
-              <h4>Info section</h4>
-              <p>Might be some info, stats, options etc.</p>
+            <div class="sidebar-module">
+                <h4>Control panel</h4>
+                <ol class="list-unstyled">
+                    <li><a href="#" disabled="1">Incompleted</a></li>
+                    <li><a href="#">Completed</a></li>
+                </ol>
             </div>
         </div>
     </div>
